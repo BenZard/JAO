@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="src/assets/favicon.svg" type="image/svg" />
+  </head>
+  <body>
+    <h1>Multiplication</h1>
+    <svg class="multi-svg" viewBox="-110 -110 220 220">
+      <g transform="scale(1,-1)">
+        <circle cx="0" cy="0" r="100" />
+        <g class="points"></g>
+        <g class="numbers"></g>
+        <g class="lines"></g>
+      </g>
+    </svg>
+
+    <div class="command">
+      <label>
+        <div class="sample">sample = <span></span></div>
+        <input type="range" name="sample" step="1" min="10" max="200" />
+      </label>
+      <label>
+        <div class="multi">multi = <span></span></div>
+        <input type="range" name="multi" step="0.01" min="2" max="5" />
+      </label>
+    </div>
+
+    <footer>
+      <div>
+        Icons made by
+        <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a>
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </footer>
+
+    <script type="module" src="dist/main.js"></script>
+  </body>
+</html>
